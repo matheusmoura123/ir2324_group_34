@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  	<include file="$(find tiago_iaslab_simulation)/launch/start_simulation.launch">
+    	<arg name="world_name" value="ias_lab_room_full_tables"/>
+  	</include>
+
+	<include file="$(find tiago_iaslab_simulation)/launch/apriltag.launch"/>
+
+  	<include file="$(find tiago_iaslab_simulation)/launch/navigation.launch"/>
+	
+	
+	<node name ="human_node" pkg="tiago_iaslab_simulation" type="human_node" output="screen"/>
+	
+
+	<node name ="navigate_server" pkg="group34_pkg1" type="navigate_server" output="screen"/>
+
+	<!-- 
+	<node name ="pick_place_server" pkg="group34_pkg2" type="pick_place_server" output="screen"/>
+
+	<node name ="read_tags_server" pkg="group34_pkg2" type="read_tags_server" output="screen"/>
+	-->
+
+</launch>

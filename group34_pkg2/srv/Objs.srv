@@ -1,0 +1,6 @@
+# Request
+bool ready
+bool all_objs
+---
+# Response
+int32[] ids

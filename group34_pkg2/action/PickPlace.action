@@ -1,0 +1,18 @@
+# pick_place.action
+
+# Goal definition
+# all the coords wrt to base_footprint (Tiagos's base)
+int32 id
+int32 task	              #task 1 = pick, 2 = place
+float64 x
+float64 y
+float64 z
+float64[] obstacles_coords   #vector of doubles like {x1, y1, x2, y2, x3, y3, x4, y4}
+
+---
+# Result definition
+string status
+
+---
+# Feedback definition
+string status

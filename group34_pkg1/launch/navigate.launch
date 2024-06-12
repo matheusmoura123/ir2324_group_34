@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  	<include file="$(find tiago_iaslab_simulation)/launch/start_simulation.launch">
+    	<arg name="world_name" value="robotics_library"/>
+  	</include>
+
+  	<include file="$(find tiago_iaslab_simulation)/launch/navigation.launch"/>
+	
+	<node name ="navigate_server" pkg="group34_pkg1" type="navigate_server" output="screen"/>
+	
+	<!--
+	<arg name="x" default="empty"/>
+	<arg name="y" default="empty"/>
+	<arg name="yaw" default="empty"/>
+	<node name ="navigate_client" pkg="group34_pkg1" type="navigate_client" args="$(arg x) $(arg y) $(arg yaw)" output="screen"/>
+	-->
+	
+</launch>

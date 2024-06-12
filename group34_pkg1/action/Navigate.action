@@ -1,0 +1,17 @@
+# Navigate.action
+
+# Goal definition
+float64 x
+float64 y
+float64 z
+float64 a  # Roll
+float64 b  # Pitch
+float64 gamma  # Yaw
+
+---
+# Result definition
+float64[] obstacles_positions
+
+---
+# Feedback definition
+string status
